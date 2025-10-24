@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/container.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,9 +34,32 @@ class Home extends StatelessWidget {
           Icon(Icons.person),
           SizedBox(width: 10),
         ],
-        
       ),
-      
+
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: [
+              
+            ],
+          ),
+        )
+      ),
+
+      // body : Container(
+      //   color: Colors.pink,
+      //   child: Center(
+      //     child: Text(
+      //       'Zahra Very very lovely',
+      //       style: TextStyle(
+      //         fontSize: 24,
+      //         color: Colors.white,
+      //         fontWeight: FontWeight.bold,
+      //       ),
+      //     ),
+      //   ),
+      // )
     );
   }
 }
