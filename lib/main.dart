@@ -9,10 +9,29 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Ini Zahra Very very lovely',
+    );
   }
 }
 
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Page'),
+        backgroundColor: Colors.pink,
+      ),
+      body: Center(
+        child: Text('Welcome to the Home Page!'),
+      ),
+    );
+  }
+}
 //run app 
 // material app
 
