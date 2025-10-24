@@ -22,7 +22,19 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(
+        title: Text('Home Page'),
+        backgroundColor: Colors.pink,
+        actions: [
+          Icon(Icons.play_arrow),
+          SizedBox(width: 10),
+          Icon(Icons.access_alarm),
+          SizedBox(width: 10),
+          Icon(Icons.person),
+          SizedBox(width: 10),
+        ],
+        
+      ),
       
     );
   }
